@@ -12,12 +12,13 @@ class App extends Component {
         "practice my css skills"
       ]
     };
-
+    this.handleInputChange = this.handleInputChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleInputChange(e) {
     this.setState({
-      userInput: e
+      userInput: e.target.value
     });
   }
 

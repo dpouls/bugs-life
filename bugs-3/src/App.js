@@ -16,7 +16,7 @@ export default class App extends Component {
         {this.state.num}
         <br />
         <br />
-        <button onClick={() => this.setState(this.state.num = Math.random())}>
+        <button onClick={() => this.setState({num: Math.floor(Math.random()*100)})}>
           Generate new random number
         </button>
       </div >
